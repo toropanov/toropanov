@@ -1,8 +1,12 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
-const MinifyPlugin = require('babel-minify-webpack-plugin');
+// const MinifyPlugin = require('babel-minify-webpack-plugin');
+// const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const data = require('./src/data.json');
+
 
 module.exports = {
   entry: './src',
@@ -30,14 +34,26 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          // 'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
         ],
       },
       {
         test: /\.pug$/,
-        loader: 'pug-loader',
+        loaders: 'pug-loader',
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[sha512:hash:base64:7].[ext]',
+            },
+          },
+        ],
       },
     ],
   },
@@ -53,6 +69,17 @@ module.exports = {
       template: './src/index.pug',
     }),
     new HtmlWebpackPugPlugin(),
-    new MinifyPlugin({}, { comments: false }),
+    new CopyWebpackPlugin([
+      {
+        from: './src/images',
+        to: 'images',
+      },
+    ]),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
   ],
 };

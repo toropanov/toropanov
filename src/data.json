@@ -1,8 +1,64 @@
 {
   "title": "Anton Toropanov – Front-end Developer",
   "about": {
-    "intro": "Since my schooldays I have been building remarkable, responsive websites for both desktop and mobile",
-    "experience": "I have a diverse set of skills, ranging from design, to complex project development, with "
+    "intro": "Since my schooldays I have been <mark>building remarkable, responsive websites</mark> for both desktop and mobile",
+    "experience": "I have a diverse set of skills, ranging from design, to complex project development, with <mark>over 6 years experience.</mark> </br></br> I am trying to keep myself up to date and staying close to new tools, trends and workflows.",
+    "stack": {
+      "title": "Development Stack",
+      "list": [
+        "React JS",
+        "React Native",
+        "Redux & Flux",
+        "Vue JS",
+        "Node JS",
+        "Webpack, Gulp & Grunt"
+      ]
+    }
   },
-  "social": {}
+  "links": {
+    "hire": {
+      "href": "mailto:anton@toropanov.com",
+      "label": "Hire me for project"
+    },
+    "works": [
+      {
+        "href": "https://github.com/tanotify",
+        "label": "GitHub",
+        "icon_path": "./images/github.png"
+      },
+      {
+        "href": "https://www.behance.net/toropanov",
+        "label": "Behance",
+        "icon_path": "./images/behance.png"
+      },
+      {
+        "href": "https://dribbble.com/tanotify",
+        "label": "Dribbble",
+        "icon_path": "./images/dribbble.png"
+      }
+    ],
+    "contacts": [
+      {
+        "href": "mailto:anton@toropanov.com",
+        "label": "anton@toropanov.com",
+        "icon_path": "./images/mail.png"
+      },      {
+        "href": "https://linkedin.com/in/toropanov/",
+        "label": "LinkedIn",
+        "icon_path": "./images/linkedin.png"
+      },
+      {
+        "href": "https://t.me/tanotify",
+        "label": "Telegram",
+        "icon_path": "./images/telegram.png"
+      }
+    ]
+  }, 
+  "clients": [
+    "lt",
+    "elje",
+    "buildhabit",
+    "aviapark"
+  ],
+  "reach_me": "<strong>You can reach me via email or find me on social networks. I would love to hear from you!</strong></br></br>I want to be involved in projects that I can be proud of, join an amazing team and advance my development career. Let’s together build something amazing."
 }

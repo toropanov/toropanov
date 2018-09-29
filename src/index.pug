@@ -3,15 +3,43 @@
 html
   head
     title= data.title
-    meta(charset="utf-8")
+    meta(charset='utf-8')
   body
-    header
-    article#about
-      section#intro= data.about.intro
-      section
-      section
+    header.row
+    article#about.row
+      section#intro.col-lg-6.col-md-6.col-sm-12.col-xs-12
+        p !{data.about.intro}
+        a(href=data.links.hire.href)= data.links.hire.label
+      section#experience.col-lg-3.col-md-3.col-sm-12.col-xs-12
+        p !{data.about.experience}
+      section#stack.col-lg-3.col-md-3.col-sm-12.col-xs-12
+        h3= data.about.stack.title
+        ul
+          each stack in data.about.stack.list
+            li= stack
+    section#clients.row
+      each client in data.clients
+        img(src=`./images/` + client + `_logo.png`)
     hr
-    section#works
-    section#contacts
-    footer
-      img(src="/images/mini_logotype.png")
+    section#works.row.row-vcentered
+      ul.col-lg-3.col-md-3.col-sm-12.col-xs-12
+        each link in data.links.works
+          li.links_set
+            span.icon
+              img(data-name=link.label,src=link.icon_path)
+            a(href=link.href, target='_blank')= link.label
+      #moments_gallery.col-lg-9.col-md-9.col-sm-12.col-xs-12
+        img(src='./images/moment1.jpg')
+        img(src='./images/moment2.jpg')
+        img(src='./images/moment3.jpg')
+    section#contacts.row.row-vcentered
+      img.col-lg-3.col-md-3.col-sm-12.col-xs-12.location(src='./images/current_location.png')
+      p.col-lg-6.col-md-6.col-sm-12.col-xs-12 !{data.reach_me}
+      ul.col-lg-3.col-md-3.col-sm-12.col-xs-12
+        each link in data.links.contacts
+          li.links_set
+            span.icon
+              img(data-name=link.label,src=link.icon_path)
+            a(href=link.href, target='_blank')= link.label
+    footer.row
+      img(src='./images/footer_logo.png')
