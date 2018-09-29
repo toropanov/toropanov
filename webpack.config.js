@@ -1,63 +1,58 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const glob = require('glob');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const PurifyCSSPlugin = require('purifycss-webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
+const MinifyPlugin = require('babel-minify-webpack-plugin');
+const data = require('./src/data.json');
 
-module.exports = ({ NODE_ENV }) => {
-  const isProduction = NODE_ENV === 'production';
-
-  return {
-    entry: './src',
-    output: {
-      path: path.join(__dirname, './dist'),
-      filename: '[name].js',
-      publicPath: './dist/',
-      chunkFilename: '[id].chunk.js',
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: [
-            {
-              loader: 'babel-loader',
-              options: {
-                presets: ['@babel/preset-env'],
-              },
+module.exports = {
+  entry: './src',
+  output: {
+    path: path.join(__dirname, './dist'),
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
             },
-            {
-              loader: 'eslint-loader',
-            },
-          ],
-        },
-        {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-        },
-      ],
-    },
-    resolve: {
-      extensions: [
-        '.js',
-        '.jsx',
-      ],
-    },
-    plugins: [
-      new HtmlWebPackPlugin({
-        template: './index.html',
-      }),
-      new ExtractTextPlugin('app.css', {
-        allChunks: true,
-      }),
-      // new ExtractTextPlugin('*.css'),
-      // // Make sure this is after ExtractTextPlugin!
-      // new PurifyCSSPlugin({
-      //   // Give paths to parse for rules. These should be absolute!
-      //   paths: glob.sync(path.join(__dirname, '*.html')),
-      // }),
+          },
+          {
+            loader: 'eslint-loader',
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+      },
     ],
-    // devtool: isProduction ? false : 'source-map',
-  };
+  },
+  resolve: {
+    extensions: [
+      '.js',
+      '.jsx',
+    ],
+  },
+  plugins: [
+    new HtmlWebPackPlugin({
+      data,
+      template: './src/index.pug',
+    }),
+    new HtmlWebpackPugPlugin(),
+    new MinifyPlugin({}, { comments: false }),
+  ],
 };

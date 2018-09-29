@@ -1,0 +1,17 @@
+- var data = htmlWebpackPlugin.options.data;
+
+html
+  head
+    title= data.title
+    meta(charset="utf-8")
+  body
+    header
+    article#about
+      section#intro= data.about.intro
+      section
+      section
+    hr
+    section#works
+    section#contacts
+    footer
+      img(src="/images/mini_logotype.png")
