@@ -7,7 +7,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const data = require('./src/data.json');
 
-
 module.exports = {
   entry: './src',
   output: {
