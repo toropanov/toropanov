@@ -11,8 +11,8 @@ const data = require('./src/data.json');
 module.exports = {
   entry: './src',
   output: {
-    path: path.join(__dirname, './dist'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, './docs'),
+    filename: 'bundle.min.js',
   },
   module: {
     rules: [

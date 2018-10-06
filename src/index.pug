@@ -4,6 +4,7 @@ html
   head
     title= data.title
     meta(charset='utf-8')
+    meta(name='viewport', content='width=1200, initial-scale=1')
   body
     header.row
     article#about.row
@@ -43,3 +44,6 @@ html
             a(href=link.href, target='_blank')= link.label
     footer.row
       img(src='./images/footer_logo.png')
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/26463723', alt='', style='position:absolute; left:-9999px;')
