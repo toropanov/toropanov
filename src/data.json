@@ -39,8 +39,8 @@
     ],
     "contacts": [
       {
-        "href": "mailto:anton@toropanov.com",
-        "label": "anton@toropanov.com",
+        "href": "mailto:toropanov+anton@gmail.com",
+        "label": "toropanov+anton@gmail.com",
         "icon_path": "./images/mail.png"
       },      {
         "href": "https://linkedin.com/in/toropanov/",
