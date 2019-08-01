@@ -42,15 +42,6 @@
         "href": "mailto:anton@toropanov.com",
         "label": "anton@toropanov.com",
         "icon_path": "./images/mail.png"
-      },      {
-        "href": "https://linkedin.com/in/toropanov/",
-        "label": "LinkedIn",
-        "icon_path": "./images/l_link.png"
-      },
-      {
-        "href": "https://t.me/toropanov_com",
-        "label": "Telegram",
-        "icon_path": "./images/telegram.png"
       }
     ]
   }, 
