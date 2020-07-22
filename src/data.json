@@ -2,7 +2,7 @@
   "title": "Anton Toropanov – Front-end Developer",
   "about": {
     "intro": "Since my schooldays I have been <mark>building remarkable, responsive websites</mark> for both desktop and mobile",
-    "experience": "I have a diverse set of skills, ranging from design, to complex project development, with <mark>over 6 years experience.</mark> </br></br> I am trying to keep myself up to date and staying close to new tools, trends and workflows.",
+    "experience": "I have a diverse set of skills, ranging from design, to complex project development, with <mark>over 8 years experience.</mark> </br></br> I am trying to keep myself up to date and staying close to new tools, trends and workflows.",
     "stack": {
       "title": "Development Stack",
       "list": [
@@ -32,7 +32,7 @@
         "icon_path": "./images/behance.png"
       },
       {
-        "href": "https://dribbble.com/tanotify",
+        "href": "https://dribbble.com/toropanov",
         "label": "Dribbble",
         "icon_path": "./images/dribbble.png"
       }
