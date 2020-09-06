@@ -68,18 +68,18 @@ module.exports = {
       template: './src/index.pug',
     }),
     new HtmlWebpackPugPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: './src/images',
-        to: 'images',
-      },
-    ]),
-    new CopyWebpackPlugin([
-      {
-        from: './favicon.ico',
-        to: './',
-      },
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: './src/images',
+          to: 'images',
+        },
+        {
+          from: './favicon.ico',
+          to: './',
+        },
+      ],
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
