@@ -27,14 +27,9 @@
         "icon_path": "./images/github.png"
       },
       {
-        "href": "https://www.behance.net/toropanov",
-        "label": "Behance",
+        "href": "https://www.linkedin.com/in/toropanov/",
+        "label": "LinkedIn",
         "icon_path": "./images/behance.png"
-      },
-      {
-        "href": "https://dribbble.com/toropanov",
-        "label": "Dribbble",
-        "icon_path": "./images/dribbble.png"
       }
     ],
     "contacts": [

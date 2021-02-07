@@ -41,6 +41,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "dependencies": {
+    "bootstrap": "4.6.0",
     "flexboxgrid-sass": "8.0.5",
     "reset-css": "5.0.1"
   }

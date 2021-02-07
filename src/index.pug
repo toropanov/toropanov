@@ -6,44 +6,49 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=1200, initial-scale=1')
   body
-    header.row
-    article#about.row
-      section#intro.col-lg-6.col-md-6.col-sm-12.col-xs-12
-        p !{data.about.intro}
-        a(href=data.links.hire.href)= data.links.hire.label
-      section#experience.col-lg-3.col-md-3.col-sm-12.col-xs-12
-        p !{data.about.experience}
-      section#stack.col-lg-3.col-md-3.col-sm-12.col-xs-12
-        h3= data.about.stack.title
-        ul
-          each stack in data.about.stack.list
-            li= stack
-    section#clients.row
-      each client in data.clients
-        img(src=`./images/` + client + `_logo.png`)
-    hr
-    section#works.row.row-vcentered
-      ul.col-lg-3.col-md-3.col-sm-12.col-xs-12
-        each link in data.links.works
-          li.links_set
-            span.icon
-              img(data-name=link.label,src=link.icon_path)
-            a(href=link.href, target='_blank')= link.label
-      #moments_gallery.col-lg-9.col-md-9.col-sm-12.col-xs-12
-        img(src='./images/moment1.jpg')
-        img(src='./images/moment2.jpg')
-        img(src='./images/moment3.jpg')
-    section#contacts.row.row-vcentered
-      img.col-lg-3.col-md-3.col-sm-12.col-xs-12.location(src='./images/current_location.png')
-      p.col-lg-6.col-md-6.col-sm-12.col-xs-12 !{data.reach_me}
-      ul.col-lg-3.col-md-3.col-sm-12.col-xs-12
-        each link in data.links.contacts
-          li.links_set
-            span.icon
-              img(data-name=link.label,src=link.icon_path)
-            a(href=link.href, target='_blank')= link.label
-    footer.row
-      img(src='./images/footer_logo.png')
-    noscript
-      div
-        img(src='https://mc.yandex.ru/watch/26463723', alt='', style='position:absolute; left:-9999px;')
+    .container-xl.mb-xs-2.mb-md-4
+      header.mb-xs-2.mb-md-3
+        img.d-xs-none.d-sm-block(src='./images/head.png')
+        img.d-xs-block.d-sm-none(src='./images/head_mobile.png')
+      article#about.row.mb-xs-1.mb-md-2
+        section#intro.col-lg-6.col-md-12.col-xs-12
+          p !{data.about.intro}
+          a.mt-xs-1.mb-xs-2(href=data.links.hire.href)= data.links.hire.label
+        section#experience.col-lg-3.col-md-6.col-xs-12
+          p !{data.about.experience}
+        section#stack.col-lg-3.col-md-6.col-xs-12
+          b= data.about.stack.title
+          ul
+            each stack in data.about.stack.list
+              li= stack
+      section#clients.row.a-center
+        each client in data.clients
+          .client_item.col-lg-3.col-sm-6.col-xs-12.mt-xs-2
+            img(src=`./images/` + client + `_logo.png`)
+    hr.mb-xs-2.mb-md-4
+    .container-xl
+      section#works.row.mb-xs-2.mb-md-4.a-center
+        ul.col-lg-3.col-md-3.col-sm-12
+          each link in data.links.works
+            li.links_set
+              span.icon
+                img(data-name=link.label,src=link.icon_path)
+              a(href=link.href, target='_blank')= link.label
+        #moments_gallery.col-lg-9.col-md-9.col-sm-12
+          img(src='./images/moment1.jpg')
+          img(src='./images/moment2.jpg')
+          img(src='./images/moment3.jpg')
+      section#contacts.row.mb-lg-2.a-center
+        img.col-xl-3.col-lg-3.col-md-3.col-sm-6.col-xs-8.d-xs-none.d-lg-block.remote_ready(src='./images/remote_ready.png')
+        p.col-xl-6.col-lg-8.col-md-6.col-xs-12 !{data.reach_me}
+        ul.col-xl-3.col-lg-12.col-md-6.col-xs-12
+          each link in data.links.contacts
+            li.links_set
+              span.icon
+                img(data-name=link.label,src=link.icon_path)
+              a(href=link.href, target='_blank')= link.label
+      footer.row
+        img(src='./images/footer_logo.png')
+  noscript
+    div
+      img(src='https://mc.yandex.ru/watch/26463723', alt='', style='position:absolute; left:-9999px;')
