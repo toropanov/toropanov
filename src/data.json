@@ -34,8 +34,8 @@
     ],
     "contacts": [
       {
-        "href": "mailto:anton@toropanov.com",
-        "label": "anton@toropanov.com",
+        "href": "mailto:toropanov@yandex.com",
+        "label": "toropanov@yandex.com",
         "icon_path": "./images/mail.png"
       }
     ]
