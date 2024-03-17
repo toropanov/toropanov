@@ -1,9 +1,9 @@
 ### Hi there 👋
 
-Since my schooldays I have been building remarkable, responsive websites for both desktop and mobile.
+Since my early education, I've been crafting remarkable, responsive websites for both desktop and mobile platforms.
 
-I have a diverse set of skills, ranging from design, to complex project development, with over 8 years experience.
-I am trying to keep myself up to date and staying close to new tools, trends and workflows.
+My expertise spans design and intricate project development, accumulating over 8 years of experience.
+I actively pursue knowledge by staying current with the latest tools, trends, and workflows.
 
 
 #### ⚡ My Development Stack
@@ -12,7 +12,11 @@ I am trying to keep myself up to date and staying close to new tools, trends and
 * Redux & Flux
 * Vue JS
 * Node JS 
-* Webpack, Gulp & Grunt
+* TypeScript
 
-You can reach me via email on my website or find me on linkedin. I would love to hear from you!
-I want to be involved in projects that I can be proud of, join an amazing team and advance my development career. Let’s together build something amazing.
+You can contact me via email through my website or connect with me on LinkedIn.
+I am eager to engage in projects that I can take pride in, collaborate with an exceptional team, and advance my career in development.
+Let's work together to create something extraordinary.
+
+
+[![](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://toropanov.com)
