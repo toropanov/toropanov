@@ -19,7 +19,7 @@ I enjoy taking an idea from an interface and interaction model through to a poli
 | Project | What it does | Stack |
 | --- | --- | --- |
 | [Obsidian Conflict Resolver](https://github.com/toropanov/obsidian-conflict-resolver) | Detects and safely resolves sync-conflict copies in an Obsidian vault.<br>[![Install in Obsidian](https://img.shields.io/badge/Obsidian-Install_plugin-7C3AED?style=flat-square&logo=obsidian&logoColor=white)](obsidian://show-plugin?id=conflict-resolver) | TypeScript · Obsidian |
-| [RSS CLI](https://github.com/toropanov/rss-cli) | Terminal RSS and Atom reader with feed management, Vim-style navigation, and readable article extraction. | Node.js · JavaScript |
+| [Feedshell](https://github.com/toropanov/feedshell) | Terminal RSS and Atom reader with feed management, Vim-style navigation, and readable article extraction.<br>[![Install with Homebrew](https://img.shields.io/badge/Homebrew-Install-FBB040?style=flat-square&logo=homebrew&logoColor=white)](https://github.com/toropanov/homebrew-tap) | Node.js · JavaScript · Homebrew |
 | [AI Food Tracker for Android](https://github.com/toropanov/android-ai-food-tracker-app) | Analyses food from a photo or description, estimates calories and macros, and tracks daily goals. | Kotlin · Android · AI APIs |
 | [Android Cleaner](https://github.com/toropanov/android-cleaner-app) | Open-source Android storage cleaner: choose folders, estimate their size, and remove their contents. | Java · Android |
 | [Table Habits Export](https://github.com/toropanov/table-habits-export) | Exports habit data into diary-style notes. | JavaScript |
