@@ -14,7 +14,7 @@ I build most of my projects with AI as a hands-on development partner — from e
 
 I enjoy taking an idea from an interface and interaction model through to a polished, maintainable product. My core work is frontend, and I also build tools for Android, the terminal, and personal knowledge systems.
 
-## Featured open-source projects
+## Featured projects
 
 | Project | What it does | Stack |
 | --- | --- | --- |
@@ -23,6 +23,7 @@ I enjoy taking an idea from an interface and interaction model through to a poli
 | [AI Food Tracker for Android](https://github.com/toropanov/android-ai-food-tracker-app) | Analyses food from a photo or description, estimates calories and macros, and tracks daily goals. | Kotlin · Android · AI APIs |
 | [Android Cleaner](https://github.com/toropanov/android-cleaner-app) | Open-source Android storage cleaner: choose folders, estimate their size, and remove their contents. | Java · Android |
 | [Table Habits Export](https://github.com/toropanov/table-habits-export) | Exports habit data into diary-style notes. | JavaScript |
+| [HabitWorth](https://www.rustore.ru/catalog/app/app.habitworth) | Android habit tracker that turns consistent daily actions into progress toward personal goals. Set virtual rewards, use reminders and streaks, track goals in a virtual savings jar, and keep all data on-device.<br><br>[![Get it on RuStore](https://img.shields.io/badge/Get%20it%20on-RuStore-0077FF?style=flat-square)](https://www.rustore.ru/catalog/app/app.habitworth) | Android |
 
 ## Core toolkit
 
